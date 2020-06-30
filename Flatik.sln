@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flatik", "Flatik\Flatik.csproj", "{EF4009F7-1EC7-477A-A15C-86F6EE4C890B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flatik.Monitoring", "MonitoringLib\Flatik.Monitoring.csproj", "{1C55D88A-2E2B-427B-B24C-99F8CD4387C7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{EF4009F7-1EC7-477A-A15C-86F6EE4C890B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF4009F7-1EC7-477A-A15C-86F6EE4C890B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF4009F7-1EC7-477A-A15C-86F6EE4C890B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C55D88A-2E2B-427B-B24C-99F8CD4387C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C55D88A-2E2B-427B-B24C-99F8CD4387C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C55D88A-2E2B-427B-B24C-99F8CD4387C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C55D88A-2E2B-427B-B24C-99F8CD4387C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

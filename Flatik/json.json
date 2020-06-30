@@ -1,0 +1,870 @@
+{
+    "apartments": [
+        {
+            "id": 569736,
+            "price": {
+                "amount": "350.00",
+                "currency": "USD",
+                "converted": {
+                    "BYN": { "amount": "840.28", "currency": "BYN" },
+                    "USD": { "amount": "350.00", "currency": "USD" }
+                }
+            },
+            "rent_type": "1_room",
+            "location": {
+                "address": "\u041c\u0438\u043d\u0441\u043a, \u0443\u043b\u0438\u0446\u0430 \u0429\u043e\u0440\u0441\u0430, 11",
+                "user_address": "\u041c\u0438\u043d\u0441\u043a, \u0443\u043b\u0438\u0446\u0430 \u0429\u043e\u0440\u0441\u0430, 11",
+                "latitude": 53.885113,
+                "longitude": 27.515671
+            },
+            "photo": "https://content.onliner.by/apartment_rentals/1608827/600x400/30e161a9c60b4267e3ae3f9352e16a24.jpeg",
+            "contact": { "owner": false },
+            "created_at": "2020-06-30T18:39:49+0300",
+            "last_time_up": "2020-06-30T18:39:49+0300",
+            "up_available_in": 86398,
+            "url": "https://r.onliner.by/ak/apartments/569736"
+        },
+        {
+            "id": 385955,
+            "price": {
+                "amount": "300.00",
+                "currency": "USD",
+                "converted": {
+                    "BYN": { "amount": "720.24", "currency": "BYN" },
+                    "USD": { "amount": "300.00", "currency": "USD" }
+                }
+            },
+            "rent_type": "1_room",
+            "location": {
+                "address": "\u041c\u0438\u043d\u0441\u043a, \u0418\u0433\u0443\u043c\u0435\u043d\u0441\u043a\u0438\u0439 \u0442\u0440\u0430\u043a\u0442, 20",
+                "user_address": "\u041c\u0438\u043d\u0441\u043a, \u0418\u0433\u0443\u043c\u0435\u043d\u0441\u043a\u0438\u0439 \u0442\u0440\u0430\u043a\u0442, 20",
+                "latitude": 53.844006,
+                "longitude": 27.569548
+            },
+            "photo": "https://content.onliner.by/apartment_rentals/2683080/600x400/6a4a19da14f5dc8ae9cc704536651132.jpeg",
+            "contact": { "owner": true },
+            "created_at": "2019-03-01T12:38:22+0300",
+            "last_time_up": "2020-06-30T18:38:16+0300",
+            "up_available_in": 86305,
+            "url": "https://r.onliner.by/ak/apartments/385955"
+        },
+        {
+            "id": 522419,
+            "price": {
+                "amount": "1300.00",
+                "currency": "USD",
+                "converted": {
+                    "BYN": { "amount": "3121.04", "currency": "BYN" },
+                    "USD": { "amount": "1300.00", "currency": "USD" }
+                }
+            },
+            "rent_type": "3_rooms",
+            "location": {
+                "address": "\u041c\u0438\u043d\u0441\u043a, \u0443\u043b\u0438\u0446\u0430 \u0424\u0438\u043b\u0438\u043c\u043e\u043d\u043e\u0432\u0430, 22",
+                "user_address": "\u041c\u0438\u043d\u0441\u043a, \u0443\u043b\u0438\u0446\u0430 \u0424\u0438\u043b\u0438\u043c\u043e\u043d\u043e\u0432\u0430, 22",
+                "latitude": 53.918392,
+                "longitude": 27.637138
+            },
+            "photo": "https://content.onliner.by/apartment_rentals/2724450/600x400/812fa4f0b2ce02ec51a446e80133aee1.jpeg",
+            "contact": { "owner": true },
+            "created_at": "2020-02-24T08:44:41+0300",
+            "last_time_up": "2020-06-30T18:36:51+0300",
+            "up_available_in": 86220,
+            "url": "https://r.onliner.by/ak/apartments/522419"
+        },
+        {
+            "id": 561568,
+            "price": {
+                "amount": "1200.00",
+                "currency": "USD",
+                "converted": {
+                    "BYN": { "amount": "2880.96", "currency": "BYN" },
+                    "USD": { "amount": "1200.00", "currency": "USD" }
+                }
+            },
+            "rent_type": "3_rooms",
+            "location": {
+                "address": "\u041c\u0438\u043d\u0441\u043a, \u043f\u0440\u043e\u0441\u043f\u0435\u043a\u0442 \u041d\u0435\u0437\u0430\u0432\u0438\u0441\u0438\u043c\u043e\u0441\u0442\u0438, 22",
+                "user_address": "\u041c\u0438\u043d\u0441\u043a, \u043f\u0440\u043e\u0441\u043f\u0435\u043a\u0442 \u041d\u0435\u0437\u0430\u0432\u0438\u0441\u0438\u043c\u043e\u0441\u0442\u0438, 22",
+                "latitude": 53.90073,
+                "longitude": 27.560062
+            },
+            "photo": "https://content.onliner.by/apartment_rentals/2652868/600x400/6738e1f8e861204a0248cc4103270843.jpeg",
+            "contact": { "owner": true },
+            "created_at": "2020-06-08T16:08:41+0300",
+            "last_time_up": "2020-06-30T18:36:26+0300",
+            "up_available_in": 86195,
+            "url": "https://r.onliner.by/ak/apartments/561568"
+        },
+        {
+            "id": 532021,
+            "price": {
+                "amount": "900.00",
+                "currency": "USD",
+                "converted": {
+                    "BYN": { "amount": "2160.72", "currency": "BYN" },
+                    "USD": { "amount": "900.00", "currency": "USD" }
+                }
+            },
+            "rent_type": "2_rooms",
+            "location": {
+                "address": "\u041c\u0438\u043d\u0441\u043a, \u043f\u0440\u043e\u0441\u043f\u0435\u043a\u0442 \u041d\u0435\u0437\u0430\u0432\u0438\u0441\u0438\u043c\u043e\u0441\u0442\u0438, 36",
+                "user_address": "\u041c\u0438\u043d\u0441\u043a, \u043f\u0440\u043e\u0441\u043f\u0435\u043a\u0442 \u041d\u0435\u0437\u0430\u0432\u0438\u0441\u0438\u043c\u043e\u0441\u0442\u0438, 36",
+                "latitude": 53.90736,
+                "longitude": 27.57469
+            },
+            "photo": "https://content.onliner.by/apartment_rentals/2698372/600x400/d78f1bfcf2f7a463787929e26da02e61.jpeg",
+            "contact": { "owner": true },
+            "created_at": "2020-03-26T10:06:42+0300",
+            "last_time_up": "2020-06-30T18:35:54+0300",
+            "up_available_in": 86163,
+            "url": "https://r.onliner.by/ak/apartments/532021"
+        },
+        {
+            "id": 455661,
+            "price": {
+                "amount": "1800.00",
+                "currency": "USD",
+                "converted": {
+                    "BYN": { "amount": "4321.44", "currency": "BYN" },
+                    "USD": { "amount": "1800.00", "currency": "USD" }
+                }
+            },
+            "rent_type": "4_rooms",
+            "location": {
+                "address": "\u041c\u0438\u043d\u0441\u043a, \u043f\u0440\u043e\u0441\u043f\u0435\u043a\u0442 \u041f\u043e\u0431\u0435\u0434\u0438\u0442\u0435\u043b\u0435\u0439, 131",
+                "user_address": "\u041c\u0438\u043d\u0441\u043a, \u043f\u0440\u043e\u0441\u043f\u0435\u043a\u0442 \u041f\u043e\u0431\u0435\u0434\u0438\u0442\u0435\u043b\u0435\u0439, 131",
+                "latitude": 53.941425,
+                "longitude": 27.464434
+            },
+            "photo": "https://content.onliner.by/apartment_rentals/2794521/600x400/dda839b52a3824b338e856be7dea953f.jpeg",
+            "contact": { "owner": true },
+            "created_at": "2019-07-29T14:54:35+0300",
+            "last_time_up": "2020-06-30T18:35:06+0300",
+            "up_available_in": 86115,
+            "url": "https://r.onliner.by/ak/apartments/455661"
+        },
+        {
+            "id": 501166,
+            "price": {
+                "amount": "1500.00",
+                "currency": "USD",
+                "converted": {
+                    "BYN": { "amount": "3601.20", "currency": "BYN" },
+                    "USD": { "amount": "1500.00", "currency": "USD" }
+                }
+            },
+            "rent_type": "3_rooms",
+            "location": {
+                "address": "\u041c\u0438\u043d\u0441\u043a, \u0428\u043e\u0440\u043d\u0430\u044f \u0443\u043b\u0438\u0446\u0430, 20",
+                "user_address": "\u041c\u0438\u043d\u0441\u043a, \u0428\u043e\u0440\u043d\u0430\u044f \u0443\u043b\u0438\u0446\u0430, 20",
+                "latitude": 53.900543,
+                "longitude": 27.54163
+            },
+            "photo": "https://content.onliner.by/apartment_rentals/2794521/600x400/a95a31216152ee748479f7cad06ac687.jpeg",
+            "contact": { "owner": true },
+            "created_at": "2019-12-25T13:38:47+0300",
+            "last_time_up": "2020-06-30T18:35:06+0300",
+            "up_available_in": 86115,
+            "url": "https://r.onliner.by/ak/apartments/501166"
+        },
+        {
+            "id": 532006,
+            "price": {
+                "amount": "400.00",
+                "currency": "USD",
+                "converted": {
+                    "BYN": { "amount": "960.32", "currency": "BYN" },
+                    "USD": { "amount": "400.00", "currency": "USD" }
+                }
+            },
+            "rent_type": "2_rooms",
+            "location": {
+                "address": "\u041c\u0438\u043d\u0441\u043a, \u0443\u043b\u0438\u0446\u0430 \u041d\u0435\u043a\u0440\u0430\u0441\u043e\u0432\u0430, 28",
+                "user_address": "\u041c\u0438\u043d\u0441\u043a, \u0443\u043b\u0438\u0446\u0430 \u041d\u0435\u043a\u0440\u0430\u0441\u043e\u0432\u0430, 28",
+                "latitude": 53.935349,
+                "longitude": 27.584755
+            },
+            "photo": "https://content.onliner.by/apartment_rentals/2974117/600x400/d12ad697193bf63f53c5c0b6f74bfc29.jpeg",
+            "contact": { "owner": true },
+            "created_at": "2020-03-26T09:24:47+0300",
+            "last_time_up": "2020-06-30T18:34:39+0300",
+            "up_available_in": 86088,
+            "url": "https://r.onliner.by/ak/apartments/532006"
+        },
+        {
+            "id": 561547,
+            "price": {
+                "amount": "750.00",
+                "currency": "USD",
+                "converted": {
+                    "BYN": { "amount": "1800.60", "currency": "BYN" },
+                    "USD": { "amount": "750.00", "currency": "USD" }
+                }
+            },
+            "rent_type": "3_rooms",
+            "location": {
+                "address": "\u041c\u0438\u043d\u0441\u043a, \u0443\u043b\u0438\u0446\u0430 \u041d\u0435\u043c\u0438\u0433\u0430, 42",
+                "user_address": "\u041c\u0438\u043d\u0441\u043a, \u0443\u043b\u0438\u0446\u0430 \u041d\u0435\u043c\u0438\u0433\u0430, 42",
+                "latitude": 53.899803,
+                "longitude": 27.542629
+            },
+            "photo": "https://content.onliner.by/apartment_rentals/2747765/600x400/50f23652607063afa3731ad110913db3.jpeg",
+            "contact": { "owner": true },
+            "created_at": "2020-06-08T15:16:43+0300",
+            "last_time_up": "2020-06-30T18:33:50+0300",
+            "up_available_in": 86039,
+            "url": "https://r.onliner.by/ak/apartments/561547"
+        },
+        {
+            "id": 561555,
+            "price": {
+                "amount": "600.00",
+                "currency": "USD",
+                "converted": {
+                    "BYN": { "amount": "1440.48", "currency": "BYN" },
+                    "USD": { "amount": "600.00", "currency": "USD" }
+                }
+            },
+            "rent_type": "2_rooms",
+            "location": {
+                "address": "\u041c\u0438\u043d\u0441\u043a, \u0443\u043b\u0438\u0446\u0430 \u041d\u0435\u043c\u0438\u0433\u0430, 42",
+                "user_address": "\u041c\u0438\u043d\u0441\u043a, \u0443\u043b\u0438\u0446\u0430 \u041d\u0435\u043c\u0438\u0433\u0430, 42",
+                "latitude": 53.899803,
+                "longitude": 27.542629
+            },
+            "photo": "https://content.onliner.by/apartment_rentals/2747765/600x400/8a8d47acf94babbc5669fecb5a0dbdbd.jpeg",
+            "contact": { "owner": true },
+            "created_at": "2020-06-08T15:30:18+0300",
+            "last_time_up": "2020-06-30T18:33:49+0300",
+            "up_available_in": 86038,
+            "url": "https://r.onliner.by/ak/apartments/561555"
+        },
+        {
+            "id": 503734,
+            "price": {
+                "amount": "800.00",
+                "currency": "USD",
+                "converted": {
+                    "BYN": { "amount": "1920.64", "currency": "BYN" },
+                    "USD": { "amount": "800.00", "currency": "USD" }
+                }
+            },
+            "rent_type": "2_rooms",
+            "location": {
+                "address": "\u041c\u0438\u043d\u0441\u043a, \u041f\u0438\u043e\u043d\u0435\u0440\u0441\u043a\u0430\u044f \u0443\u043b\u0438\u0446\u0430, 9",
+                "user_address": "\u041c\u0438\u043d\u0441\u043a, \u041f\u0438\u043e\u043d\u0435\u0440\u0441\u043a\u0430\u044f \u0443\u043b\u0438\u0446\u0430, 9",
+                "latitude": 53.938698,
+                "longitude": 27.485346
+            },
+            "photo": "https://content.onliner.by/apartment_rentals/2925080/600x400/be5c955d9f2e815854faffc2368a8e4a.jpeg",
+            "contact": { "owner": true },
+            "created_at": "2020-01-04T17:00:23+0300",
+            "last_time_up": "2020-06-30T18:33:23+0300",
+            "up_available_in": 86012,
+            "url": "https://r.onliner.by/ak/apartments/503734"
+        },
+        {
+            "id": 432607,
+            "price": {
+                "amount": "680.00",
+                "currency": "USD",
+                "converted": {
+                    "BYN": { "amount": "1632.54", "currency": "BYN" },
+                    "USD": { "amount": "680.00", "currency": "USD" }
+                }
+            },
+            "rent_type": "3_rooms",
+            "location": {
+                "address": "\u041c\u0438\u043d\u0441\u043a, \u0443\u043b\u0438\u0446\u0430 \u041c\u0430\u043a\u0441\u0438\u043c\u0430 \u0422\u0430\u043d\u043a\u0430, 30 \u043a2",
+                "user_address": "\u041c\u0438\u043d\u0441\u043a, \u0443\u043b\u0438\u0446\u0430 \u041c\u0430\u043a\u0441\u0438\u043c\u0430 \u0422\u0430\u043d\u043a\u0430, 30 \u043a2",
+                "latitude": 53.908352,
+                "longitude": 27.532667
+            },
+            "photo": "https://content.onliner.by/apartment_rentals/2573615/600x400/8d6f977066cf1a6d2b36fe37841b2b3a.jpeg",
+            "contact": { "owner": true },
+            "created_at": "2019-06-17T16:33:53+0300",
+            "last_time_up": "2020-06-30T18:32:42+0300",
+            "up_available_in": 85971,
+            "url": "https://r.onliner.by/ak/apartments/432607"
+        },
+        {
+            "id": 470305,
+            "price": {
+                "amount": "450.00",
+                "currency": "USD",
+                "converted": {
+                    "BYN": { "amount": "1080.36", "currency": "BYN" },
+                    "USD": { "amount": "450.00", "currency": "USD" }
+                }
+            },
+            "rent_type": "1_room",
+            "location": {
+                "address": "\u041c\u0438\u043d\u0441\u043a, \u043f\u0440\u043e\u0441\u043f\u0435\u043a\u0442 \u0413\u0430\u0437\u0435\u0442\u044b \u041f\u0440\u0430\u0432\u0434\u0430, 17",
+                "user_address": "\u041c\u0438\u043d\u0441\u043a, \u043f\u0440\u043e\u0441\u043f\u0435\u043a\u0442 \u0413\u0430\u0437\u0435\u0442\u044b \u041f\u0440\u0430\u0432\u0434\u0430, 17",
+                "latitude": 53.865707,
+                "longitude": 27.483789
+            },
+            "photo": "https://content.onliner.by/apartment_rentals/2655219/600x400/79a76f5b7320335d1ed69fe7899b6b7c.png",
+            "contact": { "owner": true },
+            "created_at": "2019-09-06T14:36:34+0300",
+            "last_time_up": "2020-06-30T18:32:25+0300",
+            "up_available_in": 85954,
+            "url": "https://r.onliner.by/ak/apartments/470305"
+        },
+        {
+            "id": 465213,
+            "price": {
+                "amount": "700.00",
+                "currency": "USD",
+                "converted": {
+                    "BYN": { "amount": "1680.56", "currency": "BYN" },
+                    "USD": { "amount": "700.00", "currency": "USD" }
+                }
+            },
+            "rent_type": "2_rooms",
+            "location": {
+                "address": "\u041c\u0438\u043d\u0441\u043a, \u041c\u044f\u0441\u0442\u0440\u043e\u0432\u0441\u043a\u0430\u044f \u0443\u043b\u0438\u0446\u0430, 6",
+                "user_address": "\u041c\u0438\u043d\u0441\u043a, \u041c\u044f\u0441\u0442\u0440\u043e\u0432\u0441\u043a\u0430\u044f \u0443\u043b\u0438\u0446\u0430, 6",
+                "latitude": 53.933609,
+                "longitude": 27.475677
+            },
+            "photo": "https://content.onliner.by/apartment_rentals/2567361/600x400/8f7cdcadee99bc2becd670bfdc242219.jpeg",
+            "contact": { "owner": true },
+            "created_at": "2019-08-22T10:10:23+0300",
+            "last_time_up": "2020-06-30T18:32:09+0300",
+            "up_available_in": 85938,
+            "url": "https://r.onliner.by/ak/apartments/465213"
+        },
+        {
+            "id": 548113,
+            "price": {
+                "amount": "500.00",
+                "currency": "USD",
+                "converted": {
+                    "BYN": { "amount": "1200.40", "currency": "BYN" },
+                    "USD": { "amount": "500.00", "currency": "USD" }
+                }
+            },
+            "rent_type": "2_rooms",
+            "location": {
+                "address": "\u041c\u0438\u043d\u0441\u043a, \u043f\u0440\u043e\u0441\u043f\u0435\u043a\u0442 \u041d\u0435\u0437\u0430\u0432\u0438\u0441\u0438\u043c\u043e\u0441\u0442\u0438, 87",
+                "user_address": "\u041c\u0438\u043d\u0441\u043a, \u043f\u0440\u043e\u0441\u043f\u0435\u043a\u0442 \u041d\u0435\u0437\u0430\u0432\u0438\u0441\u0438\u043c\u043e\u0441\u0442\u0438, 87",
+                "latitude": 53.923004,
+                "longitude": 27.605349
+            },
+            "photo": "https://content.onliner.by/apartment_rentals/2567361/600x400/dd0e7ed1116b2cb5e008a8c71849a5b1.jpeg",
+            "contact": { "owner": true },
+            "created_at": "2020-05-04T15:17:57+0300",
+            "last_time_up": "2020-06-30T18:32:09+0300",
+            "up_available_in": 85938,
+            "url": "https://r.onliner.by/ak/apartments/548113"
+        },
+        {
+            "id": 569735,
+            "price": {
+                "amount": "450.00",
+                "currency": "USD",
+                "converted": {
+                    "BYN": { "amount": "1080.36", "currency": "BYN" },
+                    "USD": { "amount": "450.00", "currency": "USD" }
+                }
+            },
+            "rent_type": "2_rooms",
+            "location": {
+                "address": "\u041c\u0438\u043d\u0441\u043a, \u043f\u0440\u043e\u0441\u043f\u0435\u043a\u0442 \u041d\u0435\u0437\u0430\u0432\u0438\u0441\u0438\u043c\u043e\u0441\u0442\u0438, 168",
+                "user_address": "\u041c\u0438\u043d\u0441\u043a, \u043f\u0440\u043e\u0441\u043f\u0435\u043a\u0442 \u041d\u0435\u0437\u0430\u0432\u0438\u0441\u0438\u043c\u043e\u0441\u0442\u0438, 168",
+                "latitude": 53.896908,
+                "longitude": 27.550911
+            },
+            "photo": "https://content.onliner.by/apartment_rentals/1608827/600x400/0d2c5bb764b3bad8382d65d474d288e6.jpeg",
+            "contact": { "owner": false },
+            "created_at": "2020-06-30T18:31:39+0300",
+            "last_time_up": "2020-06-30T18:31:39+0300",
+            "up_available_in": 85908,
+            "url": "https://r.onliner.by/ak/apartments/569735"
+        },
+        {
+            "id": 349002,
+            "price": {
+                "amount": "1200.00",
+                "currency": "USD",
+                "converted": {
+                    "BYN": { "amount": "2880.96", "currency": "BYN" },
+                    "USD": { "amount": "1200.00", "currency": "USD" }
+                }
+            },
+            "rent_type": "3_rooms",
+            "location": {
+                "address": "\u041c\u0438\u043d\u0441\u043a, \u043f\u0440\u043e\u0441\u043f\u0435\u043a\u0442 \u041c\u0430\u0448\u0435\u0440\u043e\u0432\u0430, 50",
+                "user_address": "\u041c\u0438\u043d\u0441\u043a, \u043f\u0440\u043e\u0441\u043f\u0435\u043a\u0442 \u041c\u0430\u0448\u0435\u0440\u043e\u0432\u0430, 50",
+                "latitude": 53.918354,
+                "longitude": 27.558882
+            },
+            "photo": "https://content.onliner.by/apartment_rentals/2567131/600x400/c1a610a8561389c1ced239cf42eef6e1.jpeg",
+            "contact": { "owner": true },
+            "created_at": "2018-09-26T11:34:26+0300",
+            "last_time_up": "2020-06-30T18:31:15+0300",
+            "up_available_in": 85884,
+            "url": "https://r.onliner.by/ak/apartments/349002"
+        },
+        {
+            "id": 492674,
+            "price": {
+                "amount": "500.00",
+                "currency": "USD",
+                "converted": {
+                    "BYN": { "amount": "1200.40", "currency": "BYN" },
+                    "USD": { "amount": "500.00", "currency": "USD" }
+                }
+            },
+            "rent_type": "3_rooms",
+            "location": {
+                "address": "\u041c\u0438\u043d\u0441\u043a, \u0443\u043b\u0438\u0446\u0430 \u041a\u043e\u043b\u044c\u0446\u043e\u0432\u0430, 32",
+                "user_address": "\u041c\u0438\u043d\u0441\u043a, \u0443\u043b\u0438\u0446\u0430 \u041a\u043e\u043b\u044c\u0446\u043e\u0432\u0430, 32",
+                "latitude": 53.952469,
+                "longitude": 27.601377
+            },
+            "photo": "https://content.onliner.by/apartment_rentals/1015040/600x400/0297f877c4e512020a532f938ed848cd.jpeg",
+            "contact": { "owner": true },
+            "created_at": "2019-11-29T23:25:03+0300",
+            "last_time_up": "2020-06-30T18:31:15+0300",
+            "up_available_in": 85884,
+            "url": "https://r.onliner.by/ak/apartments/492674"
+        },
+        {
+            "id": 566945,
+            "price": {
+                "amount": "400.00",
+                "currency": "USD",
+                "converted": {
+                    "BYN": { "amount": "960.32", "currency": "BYN" },
+                    "USD": { "amount": "400.00", "currency": "USD" }
+                }
+            },
+            "rent_type": "2_rooms",
+            "location": {
+                "address": "\u041c\u0438\u043d\u0441\u043a, \u0443\u043b\u0438\u0446\u0430 \u041a\u043e\u043b\u044c\u0446\u043e\u0432\u0430, 32",
+                "user_address": "\u041c\u0438\u043d\u0441\u043a, \u0443\u043b\u0438\u0446\u0430 \u041a\u043e\u043b\u044c\u0446\u043e\u0432\u0430, \u0434\u043e\u043c 32",
+                "latitude": 53.952545,
+                "longitude": 27.601847
+            },
+            "photo": "https://content.onliner.by/apartment_rentals/1015040/600x400/0297f877c4e512020a532f938ed848cd.jpeg",
+            "contact": { "owner": true },
+            "created_at": "2020-06-22T17:38:28+0300",
+            "last_time_up": "2020-06-30T18:31:14+0300",
+            "up_available_in": 85883,
+            "url": "https://r.onliner.by/ak/apartments/566945"
+        },
+        {
+            "id": 566948,
+            "price": {
+                "amount": "350.00",
+                "currency": "USD",
+                "converted": {
+                    "BYN": { "amount": "840.28", "currency": "BYN" },
+                    "USD": { "amount": "350.00", "currency": "USD" }
+                }
+            },
+            "rent_type": "1_room",
+            "location": {
+                "address": "\u041c\u0438\u043d\u0441\u043a, \u0443\u043b\u0438\u0446\u0430 \u041a\u043e\u043b\u044c\u0446\u043e\u0432\u0430, 32",
+                "user_address": "\u041c\u0438\u043d\u0441\u043a, \u0443\u043b\u0438\u0446\u0430 \u041a\u043e\u043b\u044c\u0446\u043e\u0432\u0430, 32",
+                "latitude": 53.952522,
+                "longitude": 27.601789
+            },
+            "photo": "https://content.onliner.by/apartment_rentals/1015040/600x400/0297f877c4e512020a532f938ed848cd.jpeg",
+            "contact": { "owner": true },
+            "created_at": "2020-06-22T17:41:42+0300",
+            "last_time_up": "2020-06-30T18:31:13+0300",
+            "up_available_in": 85882,
+            "url": "https://r.onliner.by/ak/apartments/566948"
+        },
+        {
+            "id": 483933,
+            "price": {
+                "amount": "600.00",
+                "currency": "USD",
+                "converted": {
+                    "BYN": { "amount": "1440.48", "currency": "BYN" },
+                    "USD": { "amount": "600.00", "currency": "USD" }
+                }
+            },
+            "rent_type": "1_room",
+            "location": {
+                "address": "\u041c\u0438\u043d\u0441\u043a, \u043f\u0440\u043e\u0441\u043f\u0435\u043a\u0442 \u041d\u0435\u0437\u0430\u0432\u0438\u0441\u0438\u043c\u043e\u0441\u0442\u0438, 85\u0413",
+                "user_address": "\u041c\u0438\u043d\u0441\u043a, \u043f\u0440\u043e\u0441\u043f\u0435\u043a\u0442 \u041d\u0435\u0437\u0430\u0432\u0438\u0441\u0438\u043c\u043e\u0441\u0442\u0438, 85\u0413",
+                "latitude": 53.92474,
+                "longitude": 27.602444
+            },
+            "photo": "https://content.onliner.by/apartment_rentals/2791861/600x400/a81ed8e9b66e96acc1cae67f787f28d7.jpeg",
+            "contact": { "owner": true },
+            "created_at": "2019-11-04T11:51:37+0300",
+            "last_time_up": "2020-06-30T18:30:27+0300",
+            "up_available_in": 85836,
+            "url": "https://r.onliner.by/ak/apartments/483933"
+        },
+        {
+            "id": 549168,
+            "price": {
+                "amount": "450.00",
+                "currency": "USD",
+                "converted": {
+                    "BYN": { "amount": "1080.36", "currency": "BYN" },
+                    "USD": { "amount": "450.00", "currency": "USD" }
+                }
+            },
+            "rent_type": "1_room",
+            "location": {
+                "address": "\u041c\u0438\u043d\u0441\u043a, \u0443\u043b\u0438\u0446\u0430 \u041f\u0440\u0438\u0442\u044b\u0446\u043a\u043e\u0433\u043e, 2 \u043a1",
+                "user_address": "\u041c\u0438\u043d\u0441\u043a, \u0443\u043b\u0438\u0446\u0430 \u041f\u0440\u0438\u0442\u044b\u0446\u043a\u043e\u0433\u043e 2\u043a1",
+                "latitude": 53.911076,
+                "longitude": 27.505903
+            },
+            "photo": "https://content.onliner.by/apartment_rentals/2791861/600x400/be7c6f50c0d7fda1e59c0710c81477a8.jpeg",
+            "contact": { "owner": true },
+            "created_at": "2020-05-06T17:45:17+0300",
+            "last_time_up": "2020-06-30T18:30:27+0300",
+            "up_available_in": 85836,
+            "url": "https://r.onliner.by/ak/apartments/549168"
+        },
+        {
+            "id": 549600,
+            "price": {
+                "amount": "500.00",
+                "currency": "USD",
+                "converted": {
+                    "BYN": { "amount": "1200.40", "currency": "BYN" },
+                    "USD": { "amount": "500.00", "currency": "USD" }
+                }
+            },
+            "rent_type": "4_rooms",
+            "location": {
+                "address": "\u041c\u0438\u043d\u0441\u043a, \u0443\u043b\u0438\u0446\u0430 \u0421\u0443\u0440\u0433\u0430\u043d\u043e\u0432\u0430, 88",
+                "user_address": "\u041c\u0438\u043d\u0441\u043a, \u0443\u043b\u0438\u0446\u0430 \u0421\u0443\u0440\u0433\u0430\u043d\u043e\u0432\u0430, 88",
+                "latitude": 53.931812,
+                "longitude": 27.578312
+            },
+            "photo": "https://content.onliner.by/apartment_rentals/2697500/600x400/67256b718831cb9adc63c1e6d6a27021.jpeg",
+            "contact": { "owner": true },
+            "created_at": "2020-05-07T16:35:09+0300",
+            "last_time_up": "2020-06-30T18:30:19+0300",
+            "up_available_in": 85828,
+            "url": "https://r.onliner.by/ak/apartments/549600"
+        },
+        {
+            "id": 569734,
+            "price": {
+                "amount": "800.00",
+                "currency": "USD",
+                "converted": {
+                    "BYN": { "amount": "1920.64", "currency": "BYN" },
+                    "USD": { "amount": "800.00", "currency": "USD" }
+                }
+            },
+            "rent_type": "2_rooms",
+            "location": {
+                "address": "\u041c\u0438\u043d\u0441\u043a, \u043f\u0440\u043e\u0441\u043f\u0435\u043a\u0442 \u041c\u0430\u0448\u0435\u0440\u043e\u0432\u0430, 50",
+                "user_address": "\u041c\u0438\u043d\u0441\u043a, \u043f\u0440\u043e\u0441\u043f\u0435\u043a\u0442 \u041c\u0430\u0448\u0435\u0440\u043e\u0432\u0430, 50",
+                "latitude": 53.918358,
+                "longitude": 27.559002
+            },
+            "photo": "https://content.onliner.by/apartment_rentals/1608827/600x400/6efdd0140fb51e2075b1e43a4d8951e1.jpeg",
+            "contact": { "owner": false },
+            "created_at": "2020-06-30T18:24:32+0300",
+            "last_time_up": "2020-06-30T18:24:32+0300",
+            "up_available_in": 85481,
+            "url": "https://r.onliner.by/ak/apartments/569734"
+        },
+        {
+            "id": 320122,
+            "price": {
+                "amount": "310.00",
+                "currency": "USD",
+                "converted": {
+                    "BYN": { "amount": "744.25", "currency": "BYN" },
+                    "USD": { "amount": "310.00", "currency": "USD" }
+                }
+            },
+            "rent_type": "1_room",
+            "location": {
+                "address": "\u041c\u0438\u043d\u0441\u043a, \u0443\u043b\u0438\u0446\u0430 \u0412\u043b\u0430\u0434\u0438\u0441\u043b\u0430\u0432\u0430 \u0421\u044b\u0440\u043e\u043a\u043e\u043c\u043b\u0438, 38",
+                "user_address": "\u041c\u0438\u043d\u0441\u043a, \u0443\u043b\u0438\u0446\u0430 \u0412\u043b\u0430\u0434\u0438\u0441\u043b\u0430\u0432\u0430 \u0421\u044b\u0440\u043e\u043a\u043e\u043c\u043b\u0438, 38",
+                "latitude": 53.844936,
+                "longitude": 27.559763
+            },
+            "photo": "https://content.onliner.by/apartment_rentals/179521/600x400/77a6cc8ed849dc3a77640a20d6204609.jpeg",
+            "contact": { "owner": true },
+            "created_at": "2018-06-09T10:12:23+0300",
+            "last_time_up": "2020-06-30T18:24:22+0300",
+            "up_available_in": 85471,
+            "url": "https://r.onliner.by/ak/apartments/320122"
+        },
+        {
+            "id": 522382,
+            "price": {
+                "amount": "320.00",
+                "currency": "USD",
+                "converted": {
+                    "BYN": { "amount": "768.26", "currency": "BYN" },
+                    "USD": { "amount": "320.00", "currency": "USD" }
+                }
+            },
+            "rent_type": "2_rooms",
+            "location": {
+                "address": "\u041c\u0438\u043d\u0441\u043a, \u0443\u043b\u0438\u0446\u0430 \u041e\u043b\u044c\u0448\u0435\u0432\u0441\u043a\u043e\u0433\u043e, 17",
+                "user_address": "\u041c\u0438\u043d\u0441\u043a, \u0443\u043b\u0438\u0446\u0430 \u041e\u043b\u044c\u0448\u0435\u0432\u0441\u043a\u043e\u0433\u043e, 17",
+                "latitude": 53.91412,
+                "longitude": 27.502481
+            },
+            "photo": "https://content.onliner.by/apartment_rentals/2314377/600x400/d88233388a77df600aa9805b748b0486.jpeg",
+            "contact": { "owner": true },
+            "created_at": "2020-02-23T21:41:44+0300",
+            "last_time_up": "2020-06-30T18:24:11+0300",
+            "up_available_in": 85460,
+            "url": "https://r.onliner.by/ak/apartments/522382"
+        },
+        {
+            "id": 523152,
+            "price": {
+                "amount": "295.00",
+                "currency": "USD",
+                "converted": {
+                    "BYN": { "amount": "708.24", "currency": "BYN" },
+                    "USD": { "amount": "295.00", "currency": "USD" }
+                }
+            },
+            "rent_type": "2_rooms",
+            "location": {
+                "address": "\u041c\u0438\u043d\u0441\u043a, \u041b\u043e\u0433\u043e\u0439\u0441\u043a\u0438\u0439 \u0442\u0440\u0430\u043a\u0442, 19 \u043a1",
+                "user_address": "\u041c\u0438\u043d\u0441\u043a, \u041b\u043e\u0433\u043e\u0439\u0441\u043a\u0438\u0439 \u0442\u0440\u0430\u043a\u0442, 19 \u043a1",
+                "latitude": 53.946781,
+                "longitude": 27.612438
+            },
+            "photo": "https://content.onliner.by/apartment_rentals/635935/600x400/46bbe5ffc17af51e7dcec8db4329c7f8.jpeg",
+            "contact": { "owner": true },
+            "created_at": "2020-02-25T17:42:14+0300",
+            "last_time_up": "2020-06-30T18:20:37+0300",
+            "up_available_in": 85246,
+            "url": "https://r.onliner.by/ak/apartments/523152"
+        },
+        {
+            "id": 569733,
+            "price": {
+                "amount": "700.00",
+                "currency": "USD",
+                "converted": {
+                    "BYN": { "amount": "1680.56", "currency": "BYN" },
+                    "USD": { "amount": "700.00", "currency": "USD" }
+                }
+            },
+            "rent_type": "3_rooms",
+            "location": {
+                "address": "\u041c\u0438\u043d\u0441\u043a, \u0443\u043b\u0438\u0446\u0430 \u041b\u0435\u0439\u0442\u0435\u043d\u0430\u043d\u0442\u0430 \u041a\u0438\u0436\u0435\u0432\u0430\u0442\u043e\u0432\u0430, 1\u0411",
+                "user_address": "\u041c\u0438\u043d\u0441\u043a, \u0443\u043b\u0438\u0446\u0430 \u041b\u0435\u0439\u0442\u0435\u043d\u0430\u043d\u0442\u0430 \u041a\u0438\u0436\u0435\u0432\u0430\u0442\u043e\u0432\u0430, 1\u0411",
+                "latitude": 53.86697,
+                "longitude": 27.529253
+            },
+            "photo": "https://content.onliner.by/apartment_rentals/442778/600x400/eef6d704212023907a732e3ca958cb89.jpeg",
+            "contact": { "owner": true },
+            "created_at": "2020-06-30T18:19:44+0300",
+            "last_time_up": "2020-06-30T18:19:44+0300",
+            "up_available_in": 85193,
+            "url": "https://r.onliner.by/ak/apartments/569733"
+        },
+        {
+            "id": 533161,
+            "price": {
+                "amount": "260.00",
+                "currency": "USD",
+                "converted": {
+                    "BYN": { "amount": "624.21", "currency": "BYN" },
+                    "USD": { "amount": "260.00", "currency": "USD" }
+                }
+            },
+            "rent_type": "2_rooms",
+            "location": {
+                "address": "\u041c\u0438\u043d\u0441\u043a, \u0417\u0430\u043f\u043e\u0440\u043e\u0436\u0441\u043a\u0430\u044f \u0443\u043b\u0438\u0446\u0430, 42",
+                "user_address": "\u041c\u0438\u043d\u0441\u043a, 2-\u0439 \u043f\u0435\u0440\u0435\u0443\u043b\u043e\u043a \u0411\u0430\u0433\u0440\u0430\u0442\u0438\u043e\u043d\u0430",
+                "latitude": 53.90937,
+                "longitude": 27.624071
+            },
+            "photo": "https://content.onliner.by/apartment_rentals/419182/600x400/7d9b82d480d8efd57aea71e091abfb9f.jpeg",
+            "contact": { "owner": true },
+            "created_at": "2020-03-29T22:07:22+0300",
+            "last_time_up": "2020-06-30T18:18:59+0300",
+            "up_available_in": 85148,
+            "url": "https://r.onliner.by/ak/apartments/533161"
+        },
+        {
+            "id": 569732,
+            "price": {
+                "amount": "430.00",
+                "currency": "USD",
+                "converted": {
+                    "BYN": { "amount": "1032.34", "currency": "BYN" },
+                    "USD": { "amount": "430.00", "currency": "USD" }
+                }
+            },
+            "rent_type": "1_room",
+            "location": {
+                "address": "\u041c\u0438\u043d\u0441\u043a, \u0443\u043b\u0438\u0446\u0430 \u041f\u0435\u0442\u0440\u0430 \u041c\u0441\u0442\u0438\u0441\u043b\u0430\u0432\u0446\u0430, 8",
+                "user_address": "\u041c\u0438\u043d\u0441\u043a, \u0443\u043b\u0438\u0446\u0430 \u041f\u0435\u0442\u0440\u0430 \u041c\u0441\u0442\u0438\u0441\u043b\u0430\u0432\u0446\u0430, 8",
+                "latitude": 53.930931,
+                "longitude": 27.651249
+            },
+            "photo": "https://content.onliner.by/apartment_rentals/1608827/600x400/6e57f6ca039bd673ffcd709279a8d1cc.jpeg",
+            "contact": { "owner": false },
+            "created_at": "2020-06-30T18:17:38+0300",
+            "last_time_up": "2020-06-30T18:17:38+0300",
+            "up_available_in": 85067,
+            "url": "https://r.onliner.by/ak/apartments/569732"
+        },
+        {
+            "id": 254206,
+            "price": {
+                "amount": "320.00",
+                "currency": "USD",
+                "converted": {
+                    "BYN": { "amount": "768.26", "currency": "BYN" },
+                    "USD": { "amount": "320.00", "currency": "USD" }
+                }
+            },
+            "rent_type": "1_room",
+            "location": {
+                "address": "\u041c\u0438\u043d\u0441\u043a, \u0413\u0435\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u0443\u043b\u0438\u0446\u0430, 59\u0411",
+                "user_address": "\u041c\u0418\u041d\u0421\u041a, \u0443\u043b\u0438\u0446\u0430 \u0413\u0435\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u0434\u043e\u043c 59\u0431",
+                "latitude": 53.91642,
+                "longitude": 27.670227
+            },
+            "photo": "https://content.onliner.by/apartment_rentals/188391/600x400/14e2379df6bd985ec224d19c14791cec.jpeg",
+            "contact": { "owner": true },
+            "created_at": "2017-08-19T23:31:02+0300",
+            "last_time_up": "2020-06-30T18:14:38+0300",
+            "up_available_in": 84887,
+            "url": "https://r.onliner.by/ak/apartments/254206"
+        },
+        {
+            "id": 284891,
+            "price": {
+                "amount": "150.00",
+                "currency": "USD",
+                "converted": {
+                    "BYN": { "amount": "360.12", "currency": "BYN" },
+                    "USD": { "amount": "150.00", "currency": "USD" }
+                }
+            },
+            "rent_type": "room",
+            "location": {
+                "address": "\u041c\u0438\u043d\u0441\u043a, \u0443\u043b\u0438\u0446\u0430 \u0415\u0436\u0438 \u0413\u0435\u0434\u0440\u043e\u0439\u0446\u0430, 2",
+                "user_address": "\u041c\u0438\u043d\u0441\u043a, \u0443\u043b\u0438\u0446\u0430 \u0415\u0436\u0438 \u0413\u0435\u0434\u0440\u043e\u0439\u0446\u0430, 2",
+                "latitude": 53.852482,
+                "longitude": 27.477901
+            },
+            "photo": "https://content.onliner.by/apartment_rentals/184640/600x400/f95dc0e3c9404db9cc4568d3636f9c76.jpeg",
+            "contact": { "owner": true },
+            "created_at": "2018-01-04T14:41:58+0300",
+            "last_time_up": "2020-06-30T18:14:06+0300",
+            "up_available_in": 84855,
+            "url": "https://r.onliner.by/ak/apartments/284891"
+        },
+        {
+            "id": 352213,
+            "price": {
+                "amount": "400.00",
+                "currency": "BYN",
+                "converted": {
+                    "BYN": { "amount": "400.00", "currency": "BYN" },
+                    "USD": { "amount": "166.61", "currency": "USD" }
+                }
+            },
+            "rent_type": "2_rooms",
+            "location": {
+                "address": "\u0413\u043e\u043c\u0435\u043b\u044c, \u0443\u043b\u0438\u0446\u0430 \u0413\u043e\u043b\u043e\u0432\u0430\u0446\u043a\u043e\u0433\u043e, 83",
+                "user_address": "\u0413\u043e\u043c\u0435\u043b\u044c, \u0443\u043b\u0438\u0446\u0430 \u0413\u043e\u043b\u043e\u0432\u0430\u0446\u043a\u043e\u0433\u043e, 83",
+                "latitude": 52.451,
+                "longitude": 31.016245
+            },
+            "photo": "https://content.onliner.by/apartment_rentals/1426824/600x400/61443a9fc3482fdec9460ab1431e9143.jpeg",
+            "contact": { "owner": true },
+            "created_at": "2018-10-08T20:54:12+0300",
+            "last_time_up": "2020-06-30T18:13:52+0300",
+            "up_available_in": 84841,
+            "url": "https://r.onliner.by/ak/apartments/352213"
+        },
+        {
+            "id": 190346,
+            "price": {
+                "amount": "270.00",
+                "currency": "USD",
+                "converted": {
+                    "BYN": { "amount": "648.22", "currency": "BYN" },
+                    "USD": { "amount": "270.00", "currency": "USD" }
+                }
+            },
+            "rent_type": "2_rooms",
+            "location": {
+                "address": "Minsk, \u043f\u0440\u043e\u0441\u043f\u0435\u043a\u0442 \u041f\u043e\u0431\u0435\u0434\u0438\u0442\u0435\u043b\u0435\u0439, 39",
+                "user_address": "\u041c\u0438\u043d\u0441\u043a, \u043f\u0440\u043e\u0441\u043f\u0435\u043a\u0442 \u041f\u043e\u0431\u0435\u0434\u0438\u0442\u0435\u043b\u0435\u0439 \u0434.39",
+                "latitude": 53.914017,
+                "longitude": 27.53614
+            },
+            "photo": "https://content.onliner.by/apartment_rentals/1765320/600x400/3a69f414882d5b701567a775c9bbd66d.jpeg",
+            "contact": { "owner": true },
+            "created_at": "2017-01-07T16:13:16+0300",
+            "last_time_up": "2020-06-30T18:11:50+0300",
+            "up_available_in": 84719,
+            "url": "https://r.onliner.by/ak/apartments/190346"
+        },
+        {
+            "id": 569730,
+            "price": {
+                "amount": "450.00",
+                "currency": "USD",
+                "converted": {
+                    "BYN": { "amount": "1080.36", "currency": "BYN" },
+                    "USD": { "amount": "450.00", "currency": "USD" }
+                }
+            },
+            "rent_type": "2_rooms",
+            "location": {
+                "address": "\u041c\u0438\u043d\u0441\u043a, \u0443\u043b\u0438\u0446\u0430 \u0421\u043a\u0440\u044b\u0433\u0430\u043d\u043e\u0432\u0430, 4",
+                "user_address": "\u041c\u0438\u043d\u0441\u043a, \u0443\u043b\u0438\u0446\u0430 \u0421\u043a\u0440\u044b\u0433\u0430\u043d\u043e\u0432\u0430, 4",
+                "latitude": 53.909882,
+                "longitude": 27.516764
+            },
+            "photo": "https://content.onliner.by/apartment_rentals/1608827/600x400/84b0b8491ed861b4cbaf807f4e845518.jpeg",
+            "contact": { "owner": false },
+            "created_at": "2020-06-30T18:10:24+0300",
+            "last_time_up": "2020-06-30T18:10:24+0300",
+            "up_available_in": 84633,
+            "url": "https://r.onliner.by/ak/apartments/569730"
+        },
+        {
+            "id": 302170,
+            "price": {
+                "amount": "220.00",
+                "currency": "USD",
+                "converted": {
+                    "BYN": { "amount": "528.18", "currency": "BYN" },
+                    "USD": { "amount": "220.00", "currency": "USD" }
+                }
+            },
+            "rent_type": "1_room",
+            "location": {
+                "address": "\u041c\u0438\u043d\u0441\u043a, \u0443\u043b\u0438\u0446\u0430 \u0412\u043b\u0430\u0434\u0438\u0441\u043b\u0430\u0432\u0430 \u0421\u044b\u0440\u043e\u043a\u043e\u043c\u043b\u0438",
+                "user_address": "\u041c\u0438\u043d\u0441\u043a, \u0443\u043b\u0438\u0446\u0430 \u0412\u043b\u0430\u0434\u0438\u0441\u043b\u0430\u0432\u0430 \u0421\u044b\u0440\u043e\u043a\u043e\u043c\u043b\u0438 20",
+                "latitude": 53.842098,
+                "longitude": 27.560701
+            },
+            "photo": "https://content.onliner.by/apartment_rentals/132158/600x400/a6bd7b5890ccdba18e015bd1aa88b7fb.jpeg",
+            "contact": { "owner": true },
+            "created_at": "2018-03-31T12:25:54+0300",
+            "last_time_up": "2020-06-30T18:09:59+0300",
+            "up_available_in": 84608,
+            "url": "https://r.onliner.by/ak/apartments/302170"
+        }
+    ],
+    "total": 3966,
+    "page": { "limit": 36, "items": 36, "current": 1, "last": 21 }
+}
