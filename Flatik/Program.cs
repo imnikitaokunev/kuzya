@@ -1,5 +1,6 @@
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Hosting;
+﻿using Flatik.Bot;
+using Flatik.Monitoring.Settings;
+using Microsoft.Extensions.Configuration;
 
 namespace Flatik
 {
@@ -7,14 +8,18 @@ namespace Flatik
     {
         public static void Main(string[] args)
         {
-            CreateHostBuilder(args).Build().Run();
-        }
+            IConfiguration configuration = new ConfigurationBuilder()
+                .AddJsonFile("appsettings.json", true, true)
+                .AddEnvironmentVariables()
+                .AddCommandLine(args)
+                .Build();
 
-        public static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args)
-                .ConfigureWebHostDefaults(webBuilder =>
-                {
-                    webBuilder.UseStartup<Startup>();
-                });
+
+            var botSettings = configuration.GetSection(nameof(BotSettings)).Get<BotSettings>();
+            var monitoringSettings = configuration.GetSection(nameof(MonitoringSettings)).Get<MonitoringSettings>();
+            var connectionString = configuration.GetConnectionString("Default");
+          
+            var client = new Client(botSettings, monitoringSettings, connectionString);
+        }
     }
 }

@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flatik", "Flatik\Flatik.csproj", "{EF4009F7-1EC7-477A-A15C-86F6EE4C890B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flatik.Monitoring", "Flatik.Monitoring\Flatik.Monitoring.csproj", "{1C55D88A-2E2B-427B-B24C-99F8CD4387C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flatik.Monitoring", "MonitoringLib\Flatik.Monitoring.csproj", "{1C55D88A-2E2B-427B-B24C-99F8CD4387C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flatik.Bot", "Flatik.Bot\Flatik.Bot.csproj", "{F177DD87-C99B-4879-A7E6-48F8C95A8B6D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flatik", "Flatik\Flatik.csproj", "{A7684135-F3F1-4687-8B08-8CD885607E1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flatik.Data", "Flatik.Data\Flatik.Data.csproj", "{7E740680-B7AE-4F54-AB69-DCD3B14087F1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +17,22 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EF4009F7-1EC7-477A-A15C-86F6EE4C890B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EF4009F7-1EC7-477A-A15C-86F6EE4C890B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EF4009F7-1EC7-477A-A15C-86F6EE4C890B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EF4009F7-1EC7-477A-A15C-86F6EE4C890B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1C55D88A-2E2B-427B-B24C-99F8CD4387C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1C55D88A-2E2B-427B-B24C-99F8CD4387C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C55D88A-2E2B-427B-B24C-99F8CD4387C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C55D88A-2E2B-427B-B24C-99F8CD4387C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F177DD87-C99B-4879-A7E6-48F8C95A8B6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F177DD87-C99B-4879-A7E6-48F8C95A8B6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F177DD87-C99B-4879-A7E6-48F8C95A8B6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F177DD87-C99B-4879-A7E6-48F8C95A8B6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7684135-F3F1-4687-8B08-8CD885607E1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7684135-F3F1-4687-8B08-8CD885607E1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7684135-F3F1-4687-8B08-8CD885607E1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7684135-F3F1-4687-8B08-8CD885607E1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E740680-B7AE-4F54-AB69-DCD3B14087F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E740680-B7AE-4F54-AB69-DCD3B14087F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E740680-B7AE-4F54-AB69-DCD3B14087F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E740680-B7AE-4F54-AB69-DCD3B14087F1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

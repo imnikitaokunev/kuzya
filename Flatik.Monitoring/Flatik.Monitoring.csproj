@@ -15,4 +15,8 @@
     <Folder Include="Exceptions\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Flatik.Data\Flatik.Data.csproj" />
+  </ItemGroup>
+
 </Project>
