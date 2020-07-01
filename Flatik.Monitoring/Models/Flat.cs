@@ -4,7 +4,7 @@ namespace Flatik.Monitoring.Models
 {
     public class Flat
     {
-        public int Id { get; set; }
+        public long Id { get; set; }
         public string Site { get; set; }
         public int Rooms { get; set; }
         public bool IsOwner { get; set; }

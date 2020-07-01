@@ -8,9 +8,9 @@ namespace Flatik.Data.Configurations
     {
         public void Configure(EntityTypeBuilder<FlatEntity> builder)
         {
-            builder.ToTable("Flat");
+            builder.ToTable("Flats");
 
-            builder.HasKey(x => new {x.SiteName, x.Id});
+            builder.HasKey(x => new {x.Id, x.Site});
         }
     }
 }

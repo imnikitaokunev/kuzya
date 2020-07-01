@@ -5,6 +5,6 @@ namespace Flatik.Monitoring.Deserializers
 {
     internal interface IDeserializer
     {
-        IEnumerable<Flat> Deserialize(string json);
+        IEnumerable<Flat> Deserialize(string text);
     }
 }

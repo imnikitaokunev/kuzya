@@ -8,27 +8,22 @@ using Newtonsoft.Json.Linq;
 
 namespace Flatik.Monitoring.Deserializers
 {
-    internal class OnlinerDeserializer : IDeserializer
+    internal class OnlinerDeserializer : BaseDeserializer
     {
-        private readonly string _siteName;
+        public OnlinerDeserializer(string siteName) : base(siteName) { }
 
-        public OnlinerDeserializer(string siteName)
-        {
-            _siteName = siteName;
-        }
-
-        public IEnumerable<Flat> Deserialize(string json)
+        public override IEnumerable<Flat> Deserialize(string json)
         {
             var deserializedObject = (JObject) JsonConvert.DeserializeObject(json);
-            var apartments = deserializedObject.Value<JArray>("apartments").Select(ToSiteModel);
+            var flats = deserializedObject.Value<JArray>("apartments").Select(ToSiteModel);
 
-            return apartments;
+            return flats;
         }
 
         private Flat ToSiteModel(JToken json) => new Flat
         {
             Id = json["id"].Value<int>(),
-            Site = _siteName,
+            Site = SiteName,
             Rooms = json["rent_type"].Value<string>()[0].ToInt(),
             IsOwner = json["contact"].Value<JObject>().Value<bool>("owner"),
             UsdPrice = Convert.ToInt32(json["price"].Value<double>("amount")),

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading;
-using Flatik.Data;
+using System.Threading.Tasks;
 using Flatik.Data.Entities;
 using Flatik.Data.Repositories;
 using Flatik.Monitoring.Deserializers;
@@ -19,6 +19,7 @@ namespace Flatik.Monitoring.Monitor
     {
         private readonly MonitoringSettings _settings;
         private readonly IFlatRepository _flatRepository;
+        private IEnumerable<Task> _tasks;
 
         public Monitor(MonitoringSettings settings, IFlatRepository flatRepository)
         {
@@ -30,6 +31,8 @@ namespace Flatik.Monitoring.Monitor
 
         public void Run()
         {
+            // TODO: TPL
+          
             while (true)
             {
                 var flats = _settings.Sites.SelectMany(SendRequest);
@@ -46,7 +49,7 @@ namespace Flatik.Monitoring.Monitor
 
         private List<Flat> GetNewFlats(IEnumerable<Flat> flats)
         {
-            var newFlats = flats.Where(x => _flatRepository.IsExists(x.Id, x.Site)).ToList();
+            var newFlats = flats.Where(x => !_flatRepository.IsExists(x.Id, x.Site)).ToList();
             
             _flatRepository.AddRange(newFlats.Adapt<IEnumerable<FlatEntity>>());
 
@@ -61,6 +64,7 @@ namespace Flatik.Monitoring.Monitor
             var client = new HttpClient();
             client.BaseAddress = new Uri(baseUrl);
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("text/html"));
 
             var response = client.GetAsync(queryString).Result;
             if (!response.IsSuccessStatusCode)
@@ -72,15 +76,12 @@ namespace Flatik.Monitoring.Monitor
             var result = response.Content.ReadAsStringAsync().Result;
             var type = Type.GetType(site.DeserializerType);
 
-            // TODO: Create deserializer creator.
-
-            if (!(Activator.CreateInstance(type, args: site.Name) is IDeserializer helper))
+            if (!(Activator.CreateInstance(type, site.Name) is IDeserializer helper))
             {
                 return new List<Flat>();
             }
             
-            var deserializedObject = helper.Deserialize(result);
-            return deserializedObject;
+            return helper.Deserialize(result);
         }
     }
 }

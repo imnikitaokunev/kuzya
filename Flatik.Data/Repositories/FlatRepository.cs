@@ -27,6 +27,6 @@ namespace Flatik.Data.Repositories
             _context.SaveChanges();
         }
 
-        public bool IsExists(int id, string site) => _dbSet.Find(new {id, site}) != null;
+        public bool IsExists(long id, string site) => _dbSet.Find(id, site) != null;
     }
 }

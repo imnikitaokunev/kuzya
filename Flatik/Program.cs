@@ -1,4 +1,5 @@
-﻿using Flatik.Bot;
+﻿using System;
+using Flatik.Bot;
 using Flatik.Monitoring.Settings;
 using Microsoft.Extensions.Configuration;
 
@@ -20,6 +21,9 @@ namespace Flatik
             var connectionString = configuration.GetConnectionString("Default");
           
             var client = new Client(botSettings, monitoringSettings, connectionString);
+            client.Run();
+
+            Console.ReadLine();
         }
     }
 }

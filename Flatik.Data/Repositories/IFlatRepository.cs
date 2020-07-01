@@ -7,6 +7,6 @@ namespace Flatik.Data.Repositories
     {
         void Add(FlatEntity flat);
         void AddRange(IEnumerable<FlatEntity> flats);
-        bool IsExists(int id, string site);
+        bool IsExists(long id, string site);
     }
 }

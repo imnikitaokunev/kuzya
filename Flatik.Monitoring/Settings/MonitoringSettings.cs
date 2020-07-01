@@ -10,11 +10,6 @@ namespace Flatik.Monitoring.Settings
         public int IntervalInSeconds { get; set; }
         
         /// <summary>
-        /// Defines new flats created limit.
-        /// </summary>
-        public int NewFlatConditionInSeconds { get; set; }
-
-        /// <summary>
         /// Defines collection of sites that will be monitored.
         /// </summary>
         public List<SiteSettings> Sites { get; set; }

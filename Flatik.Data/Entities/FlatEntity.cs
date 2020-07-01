@@ -2,7 +2,7 @@
 {
     public class FlatEntity
     {
-        public int Id { get; set; }
-        public string SiteName { get; set; }
+        public long Id { get; set; }
+        public string Site { get; set; }
     }
 }
