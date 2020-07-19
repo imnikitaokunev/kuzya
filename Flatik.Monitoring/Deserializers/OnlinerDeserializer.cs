@@ -26,7 +26,7 @@ namespace Flatik.Monitoring.Deserializers
             Site = SiteName,
             Rooms = json["rent_type"].Value<string>()[0].ToInt(),
             IsOwner = json["contact"].Value<JObject>().Value<bool>("owner"),
-            UsdPrice = Convert.ToInt32(json["price"].Value<double>("amount")),
+            UsdPrice = Convert.ToInt32(json["price"].Value<JObject>("converted").Value<JObject>("USD").Value<double>("amount")),
             BynPrice = Convert.ToInt32(json["price"].Value<JObject>("converted").Value<JObject>("BYN").Value<double>("amount")),
             Link = json["url"].Value<string>(),
             CreatedAt = json["created_at"].Value<DateTime>(),

@@ -10,10 +10,8 @@
     <PackageReference Include="AngleSharp" Version="0.14.0" />
     <PackageReference Include="Mapster" Version="5.3.2" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Exceptions\" />
+    <PackageReference Include="NLog" Version="4.7.2" />
+    <PackageReference Include="NLog.Extensions.Logging" Version="1.6.4" />
   </ItemGroup>
 
   <ItemGroup>

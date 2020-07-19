@@ -23,5 +23,10 @@ namespace Flatik.Monitoring.Settings
         /// Defines type that will deserialize response json.
         /// </summary>
         public string DeserializerType { get; set; }
+
+        /// <summary>
+        /// Defines type that will deserialize response json.
+        /// </summary>
+        public int IntervalInSeconds { get; set; }
     }
 }
