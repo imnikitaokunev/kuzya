@@ -21,11 +21,13 @@ namespace Kuzya.Monitoring.Monitor
         private readonly SiteSettings _settings;
         private readonly IFlatRepository _repository;
         private readonly ILogger _logger;
+        private readonly CancellationTokenSource _tokenSource = new CancellationTokenSource();
 
         public Site(SiteSettings settings, IFlatRepository repository)
         {
             _settings = settings;
             _repository = repository;
+
             _logger = LogManager.GetCurrentClassLogger();
         }
 
@@ -33,9 +35,7 @@ namespace Kuzya.Monitoring.Monitor
 
         public void Run()
         {
-            // TODO: While cancellation token?
-
-            while (true)
+            while (!_tokenSource.Token.IsCancellationRequested)
             {
                 try
                 {
@@ -50,11 +50,13 @@ namespace Kuzya.Monitoring.Monitor
                 }
                 catch (TypeInitializationException ex)
                 {
-                    // Cancel task.
+                    _logger.Fatal(ex.ToString());
+                    _tokenSource.Cancel();
                 }
                 catch (TypeLoadException ex)
                 {
-                    // Cancel task.
+                    _logger.Fatal(ex.ToString());
+                    _tokenSource.Cancel();
                 }
                 catch (Exception ex)
                 {

@@ -20,8 +20,6 @@ namespace Kuzya.Monitoring.Monitor
             _settings = settings;
             _connectionString = connectionString;
 
-            // TODO: Check count of sites > 0?
-
             _sites = _settings.Sites.Select(InitializeSite).ToList();
             _sites.ForEach(x => x.NewFlats += OnNewFlats);
         }
