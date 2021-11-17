@@ -31,10 +31,11 @@ namespace Infrastructure.Monitoring
 
         private Site InitializeSite(SiteSettings settings)
         {
-            var context = new KuzyaContext(_connectionString);
-            var repository = new FlatRepository(context);
+            return null;
+            //var context = new KuzyaContext(_connectionString);
+            //var repository = new FlatRepository(context);
 
-            return new Site(settings, repository);
+            //return new Site(settings, repository);
         }
 
         private void OnNewFlats(List<Flat> flats)

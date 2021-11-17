@@ -2,8 +2,6 @@
 using Application.Extensions;
 using Application.Models;
 using Application.Models.Settings;
-using Domain;
-using Mapster;
 using NLog;
 using System.Net.Http.Headers;
 
@@ -12,14 +10,12 @@ namespace Application.Monitor
     public class Site
     {
         private readonly SiteSettings _settings;
-        private readonly IFlatRepository _repository;
         private readonly ILogger _logger;
         private readonly CancellationTokenSource _tokenSource = new CancellationTokenSource();
 
-        public Site(SiteSettings settings, IFlatRepository repository)
+        public Site(SiteSettings settings)
         {
             _settings = settings;
-            _repository = repository;
 
             _logger = LogManager.GetCurrentClassLogger();
         }
@@ -33,13 +29,13 @@ namespace Application.Monitor
                 try
                 {
                     var flats = SendRequestAsync(_settings).Result;
-                    var newFlats = GetNewFlats(flats);
+                    //var newFlats = GetNewFlats(flats);
 
-                    if (newFlats.Count > 0)
-                    {
-                        NewFlats?.Invoke(newFlats);
-                        _repository.AddRange(newFlats.Adapt<IEnumerable<FlatEntity>>());
-                    }
+                    //if (newFlats.Count > 0)
+                    //{
+                    //    NewFlats?.Invoke(newFlats);
+                    //    //_repository.AddRange(newFlats.Adapt<IEnumerable<FlatEntity>>());
+                    //}
                 }
                 catch (TypeInitializationException ex)
                 {
@@ -92,7 +88,7 @@ namespace Application.Monitor
             return helper.Deserialize(result);
         }
 
-        private List<Flat> GetNewFlats(IEnumerable<Flat> flats) =>
-            flats.Where(x => !_repository.IsExists(x.Id, x.Site)).ToList();
+        //private List<Flat> GetNewFlats(IEnumerable<Flat> flats) =>
+        //    flats.Where(x => !_repository.IsExists(x.Id, x.Site)).ToList();
     }
 }
