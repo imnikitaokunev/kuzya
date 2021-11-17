@@ -11,8 +11,6 @@ public class Program
     {
         using IHost host = CreateHostBuilder(args).Build();
 
-        //host.Services.GetService<TelegramReceiever>()?.StartReceiving();
-
         await host.RunAsync();
     }
 
@@ -49,22 +47,3 @@ public class Program
             services.AddInfrastructure(configurationRoot);
         });
 }
-
-
-//IConfiguration configuration = new ConfigurationBuilder()
-//                .AddJsonFile("appsettings.json", true, true)
-//                .AddEnvironmentVariables()
-//                .AddCommandLine(args)
-//                .Build();
-
-
-//var botSettings = configuration.GetSection(nameof(BotSettings)).Get<BotSettings>();
-//var monitoringSettings = configuration.GetSection(nameof(MonitoringSettings)).Get<MonitoringSettings>();
-//var connectionString = configuration.GetConnectionString("Default");
-
-//LogManager.Configuration = new NLogLoggingConfiguration(configuration.GetSection("NLog"));
-
-//var client = new Client(botSettings, monitoringSettings, connectionString);
-//client.Run();
-
-//Console.ReadLine();
