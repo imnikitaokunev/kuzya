@@ -1,7 +1,7 @@
 ﻿using Application.Common.Interfaces;
 using Application.Models.Options;
 using Application.Onliner;
-using Domain;
+using Domain.Entities;
 using Mapster;
 using Microsoft.Extensions.Options;
 using Quartz;
