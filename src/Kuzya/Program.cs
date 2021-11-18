@@ -4,6 +4,7 @@ using Infrastructure;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Serilog;
 
 public class Program
 {
@@ -25,6 +26,19 @@ public class Program
                          .AddJsonFile($"appsettings.{environment}.json", true, true)
                          .AddEnvironmentVariables();
         })
+        .UseSerilog((context, configuration) =>
+        {
+            configuration.Enrich.FromLogContext()
+                .Enrich.WithMachineName()
+                .Enrich.WithProperty("Environment", context.HostingEnvironment.EnvironmentName)
+                .WriteTo.Console()
+                .ReadFrom.Configuration(context.Configuration);
+
+            if (context.HostingEnvironment.IsDevelopment())
+            {
+                configuration.WriteTo.File("log.txt");
+            }
+        })
         .ConfigureServices((context, services) =>
         {
             var configurationRoot = context.Configuration;
@@ -34,12 +48,6 @@ public class Program
 
             services.Configure<ApplicationOptions>(
                 configurationRoot.GetSection(nameof(ApplicationOptions)));
-
-            //var options = new TelegramOptions();
-            //configurationRoot.GetSection(nameof(TelegramOptions)).Bind(options);
-
-            //services.AddTransient<ITelegramBotClient>(x => new TelegramBotClient(options.ApiKey));
-            //services.AddTransient<TelegramReceiever>();
 
             services.AddApplication(configurationRoot);
             services.AddInfrastructure(configurationRoot);
