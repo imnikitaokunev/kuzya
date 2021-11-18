@@ -20,15 +20,10 @@ public class Program
         {
             configuration.Sources.Clear();
 
+            var environment = hostingContext.HostingEnvironment.EnvironmentName;
             configuration.AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+                         .AddJsonFile($"appsettings.{environment}.json", true, true)
                          .AddEnvironmentVariables();
-
-            var env = hostingContext.HostingEnvironment.EnvironmentName;
-            var environment = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
-            if (environment != null)
-            {
-                configuration.AddJsonFile($"appsettings.{environment}.json", true, true);
-            }
         })
         .ConfigureServices((context, services) =>
         {
@@ -37,13 +32,16 @@ public class Program
             services.Configure<OnlinerOptions>(
                 configurationRoot.GetSection(nameof(OnlinerOptions)));
 
+            services.Configure<ApplicationOptions>(
+                configurationRoot.GetSection(nameof(ApplicationOptions)));
+
             //var options = new TelegramOptions();
             //configurationRoot.GetSection(nameof(TelegramOptions)).Bind(options);
 
             //services.AddTransient<ITelegramBotClient>(x => new TelegramBotClient(options.ApiKey));
             //services.AddTransient<TelegramReceiever>();
 
-            services.AddApplication();
+            services.AddApplication(configurationRoot);
             services.AddInfrastructure(configurationRoot);
         });
 }

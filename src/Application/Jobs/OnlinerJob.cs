@@ -30,10 +30,10 @@ namespace Application.Jobs
             var newApartments = new List<OnlinerDto>();
 
             // Add apartments to database
-            foreach(var apartment in response.Apartments)
+            foreach (var apartment in response.Apartments)
             {
                 var existingApartment = await _onlinerApartmentRepository.GetByIdAsync(apartment.Id);
-                if(existingApartment == null)
+                if (existingApartment == null)
                 {
                     await _onlinerApartmentRepository.AddAsync(apartment.Adapt<OnlinerApartment>());
                     newApartments.Add(apartment);
@@ -41,7 +41,7 @@ namespace Application.Jobs
             }
 
             // Show new
-            foreach(var apartment in newApartments)
+            foreach (var apartment in newApartments)
             {
                 Console.WriteLine($"#{apartment.Id} - {apartment.Url}");
             }

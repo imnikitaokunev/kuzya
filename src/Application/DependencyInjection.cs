@@ -1,4 +1,6 @@
 ﻿using Application.Jobs;
+using Application.Models.Options;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Quartz;
 
@@ -6,14 +8,13 @@ namespace Application
 {
     public static class DependencyInjection
     {
-        public static IServiceCollection AddApplication(this IServiceCollection services)
+        public static IServiceCollection AddApplication(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddQuartz(q =>
             {
                 q.SchedulerId = "Scheduler-Core";
 
                 q.UseMicrosoftDependencyInjectionJobFactory();
-
                 q.UseSimpleTypeLoader();
                 q.UseInMemoryStore();
                 q.UseDefaultThreadPool(tp =>
@@ -21,13 +22,16 @@ namespace Application
                     tp.MaxConcurrency = 10;
                 });
 
+                var applicationOptions = new ApplicationOptions();
+                configuration.GetSection(nameof(ApplicationOptions)).Bind(applicationOptions);
+
                 q.UseJobFactory<JobFactory>();
 
                 q.ScheduleJob<OnlinerJob>(trigger => trigger
-                    .WithIdentity("Combined Configuration Trigger")
+                    .WithIdentity("Onliner Trigger")
                     .StartNow()
-                    .WithSimpleSchedule(x => x.WithIntervalInMinutes(1).RepeatForever())
-                    .WithDescription("my awesome trigger configured for a job with single call")
+                    .WithSimpleSchedule(x => x.WithIntervalInMinutes(applicationOptions.Interval).RepeatForever())
+                    .WithDescription("Repeat every [interval] minutes forever")
                 );
             });
 

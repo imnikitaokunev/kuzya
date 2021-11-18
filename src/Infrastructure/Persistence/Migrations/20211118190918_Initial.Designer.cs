@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Infrastructure.Persistence.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20211117184414_Onliner")]
-    partial class Onliner
+    [Migration("20211118190918_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -21,17 +21,18 @@ namespace Infrastructure.Persistence.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("Domain.FlatEntity", b =>
+            modelBuilder.Entity("Domain.Entities.OnlinerApartment", b =>
                 {
                     b.Property<long>("Id")
                         .HasColumnType("bigint");
 
-                    b.Property<string>("Site")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<string>("Url")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id", "Site");
+                    b.HasKey("Id");
 
-                    b.ToTable("Flats", (string)null);
+                    b.ToTable("OnlinerApartments");
                 });
 #pragma warning restore 612, 618
         }

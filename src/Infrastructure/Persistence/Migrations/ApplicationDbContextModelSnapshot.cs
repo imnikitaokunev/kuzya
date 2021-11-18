@@ -19,26 +19,10 @@ namespace Infrastructure.Persistence.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("Domain.FlatEntity", b =>
+            modelBuilder.Entity("Domain.Entities.OnlinerApartment", b =>
                 {
                     b.Property<long>("Id")
                         .HasColumnType("bigint");
-
-                    b.Property<string>("Site")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.HasKey("Id", "Site");
-
-                    b.ToTable("Flats", (string)null);
-                });
-
-            modelBuilder.Entity("Domain.OnlinerApartment", b =>
-                {
-                    b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"), 1L, 1);
 
                     b.Property<string>("Url")
                         .IsRequired()
