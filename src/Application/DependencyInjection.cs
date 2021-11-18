@@ -1,5 +1,7 @@
 ﻿using Application.Jobs;
 using Application.Models.Options;
+using Mapster;
+using MapsterMapper;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Quartz;
@@ -10,6 +12,12 @@ public static class DependencyInjection
 {
     public static IServiceCollection AddApplication(this IServiceCollection services, IConfiguration configuration)
     {
+        MappingProfile.ApplyMappings();
+
+        var config = TypeAdapterConfig.GlobalSettings;
+        services.AddSingleton(config);
+        services.AddScoped<IMapper, ServiceMapper>();
+
         services.AddQuartz(q =>
         {
             q.SchedulerId = "Scheduler-Core";

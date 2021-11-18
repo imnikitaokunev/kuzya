@@ -2,7 +2,7 @@
 using Application.Models.Options;
 using Application.Onliner;
 using Domain.Entities;
-using Mapster;
+using MapsterMapper;
 using Microsoft.Extensions.Options;
 using Quartz;
 using RestSharp;
@@ -13,34 +13,30 @@ public class OnlinerJob : BaseJob, IJob
 {
     private readonly IOnlinerApartmentRepository _onlinerApartmentRepository;
 
-    public OnlinerJob(IOptions<OnlinerOptions> onlinerOptions, IOnlinerApartmentRepository onlinerApartmentRepository) : base(onlinerOptions.Value.BaseUrl)
+    public OnlinerJob(IOptions<OnlinerOptions> onlinerOptions, IOnlinerApartmentRepository onlinerApartmentRepository, IMapper mapper) : base(onlinerOptions.Value.BaseUrl, mapper)
     {
         _onlinerApartmentRepository = onlinerApartmentRepository;
     }
 
     public override async Task Execute(IJobExecutionContext context)
     {
-        // Send request to site
         var response = await Client.GetAsync<OnlinerResponse>(new RestRequest());
         if (!response.Apartments.Any())
         {
             return;
         }
 
-        var newApartments = new List<OnlinerDto>();
-
-        // Add apartments to database
+        var newApartments = new List<OnlinerApartmentDto>();
         foreach (var apartment in response.Apartments)
         {
             var existingApartment = await _onlinerApartmentRepository.GetByIdAsync(apartment.Id);
             if (existingApartment == null)
             {
-                await _onlinerApartmentRepository.AddAsync(apartment.Adapt<OnlinerApartment>());
+                await _onlinerApartmentRepository.AddAsync(Mapper.Map<OnlinerApartment>(apartment));
                 newApartments.Add(apartment);
             }
         }
 
-        // Show new
         foreach (var apartment in newApartments)
         {
             Console.WriteLine($"#{apartment.Id} - {apartment.Url}");
