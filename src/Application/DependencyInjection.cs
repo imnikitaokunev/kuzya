@@ -1,4 +1,6 @@
-﻿using Application.Jobs;
+﻿using Application.Common;
+using Application.Common.Interfaces;
+using Application.Jobs;
 using Application.Models.Options;
 using Mapster;
 using MapsterMapper;
@@ -44,6 +46,8 @@ public static class DependencyInjection
         });
 
         services.AddTransient<OnlinerJob>();
+        services.AddTransient<IChatNotifier, ChatNotifier>();
+        services.AddScoped<TelegramReceiver>();
 
         // Quartz.Extensions.Hosting allows you to fire background service that handles scheduler lifecycle
         services.AddQuartzHostedService(options =>

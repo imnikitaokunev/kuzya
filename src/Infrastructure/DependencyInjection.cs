@@ -18,6 +18,7 @@ namespace Infrastructure
 
             services.AddScoped<IApplicationDbContext>(provider => provider.GetService<ApplicationDbContext>());
             services.AddScoped<IOnlinerApartmentRepository, OnlinerApartmentRepository>();
+            services.AddScoped<IChatRepository, ChatRepository>();
 
             return services;
         }

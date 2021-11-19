@@ -4,10 +4,11 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Infrastructure.Persistence.Configurations;
 
-internal class OnlinerApartmentConfiguration : IEntityTypeConfiguration<OnlinerApartment>
+internal class ChatConfiguration : IEntityTypeConfiguration<Chat>
 {
-    public void Configure(EntityTypeBuilder<OnlinerApartment> builder)
+    public void Configure(EntityTypeBuilder<Chat> builder)
     {
         builder.Property(x => x.Id).ValueGeneratedNever();
+        builder.HasOne(x => x.OnlinerSetup).WithOne().HasForeignKey<OnlinerSetup>(x => x.ChatId);
     }
 }
