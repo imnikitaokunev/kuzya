@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Kuzya": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
