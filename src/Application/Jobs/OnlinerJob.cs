@@ -44,7 +44,10 @@ public class OnlinerJob : BaseJob, IJob
                 }
             }
 
-            await UserNotifier.NotifyAsync(newApartments);
+            if (newApartments.Any())
+            {
+                await UserNotifier.NotifyAsync(newApartments);
+            }
         }
         catch (Exception ex)
         {
