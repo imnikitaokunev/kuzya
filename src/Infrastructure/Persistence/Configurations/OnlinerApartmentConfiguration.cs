@@ -8,6 +8,7 @@ internal class OnlinerApartmentConfiguration : IEntityTypeConfiguration<OnlinerA
 {
     public void Configure(EntityTypeBuilder<OnlinerApartment> builder)
     {
-        builder.Property(x => x.Id).ValueGeneratedNever();
+        builder.ToContainer(nameof(OnlinerApartment));
+        builder.HasNoDiscriminator();
     }
 }

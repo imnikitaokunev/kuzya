@@ -5,9 +5,8 @@ namespace Application.Common.Interfaces
 {
     public interface IApplicationDbContext
     {
-        DbSet<OnlinerApartment> OnlinerApartments { get; }
-        DbSet<Chat> Chats { get; }
-        DbSet<OnlinerSetup> OnlinerSetups { get; }
+        DbSet<OnlinerApartment>? OnlinerApartments { get; }
+        DbSet<Chat>? Chats { get; }
 
         Task<int> SaveChangesAsync(CancellationToken cancellationToken);
     }

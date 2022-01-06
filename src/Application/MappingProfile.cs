@@ -19,9 +19,6 @@ internal static class MappingProfile
             .Map(dst => dst.Currency, src => src.Price.Converted.USD.Currency)
             .Map(dst => dst.Source, src => Constants.Onliner);
 
-        TypeAdapterConfig<OnlinerSetup, ApplicationOnlinerSetup>
-            .NewConfig();
-
         TypeAdapterConfig<Chat, ApplicationChat>
             .NewConfig();
     }

@@ -1,7 +1,6 @@
-﻿namespace Application.Common
+﻿namespace Application.Common;
+
+public static class Constants
 {
-    internal static class Constants
-    {
-        public const string Onliner = "Onliner";
-    }
+    public const string Onliner = "Onliner";
 }
