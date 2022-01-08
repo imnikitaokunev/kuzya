@@ -2,4 +2,4 @@
 bin/
 obj/
 
-src/Infrastructure/Persistence/Contexts/KuzyaContextFactory.cs
+*.terraform*
