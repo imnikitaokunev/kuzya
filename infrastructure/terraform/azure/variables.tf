@@ -8,7 +8,17 @@ variable "location" {
     type        = string
 }
 
-variable "cosmos_db_name" {
-    description = "(Required) The name of the Cosmos DB resource."
+variable "cosmosdb_account_name" {
+    description = "(Required) The name of the Cosmos DB account."
+    type        = string
+}
+
+variable "cosmosdb_database_name" {
+    description = "(Required) The name of the Cosmos DB database."
+    type        = string
+}
+
+variable "cosmosdb_container_name" {
+    description = "(Required) The name of the Cosmos DB container."
     type        = string
 }

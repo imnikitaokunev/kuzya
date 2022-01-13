@@ -18,7 +18,9 @@ resource "azurerm_resource_group" "rg" {
 module "cosmos_db" {
     source = "./modules/cosmos-db"
 
-    name = var.cosmos_db_name
+    name                = var.cosmosdb_account_name
     resource_group_name = azurerm_resource_group.rg.name
-    location = azurerm_resource_group.rg.location
+    location            = azurerm_resource_group.rg.location
+    database_name       = var.cosmosdb_database_name
+    container_name      = var.cosmosdb_container_name
 }
