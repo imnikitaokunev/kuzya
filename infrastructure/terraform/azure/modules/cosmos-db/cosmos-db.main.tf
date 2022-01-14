@@ -30,7 +30,7 @@ resource "azurerm_cosmosdb_sql_container" "example" {
   resource_group_name   = var.resource_group_name
   account_name          = var.name
   database_name         = var.database_name
-  partition_key_path    = "/partititionKey"
+  partition_key_path    = "/platform"
   throughput            = 400
 
   unique_key {

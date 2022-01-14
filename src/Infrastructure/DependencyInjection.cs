@@ -12,12 +12,12 @@ namespace Infrastructure
         public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseCosmos(configuration["CosmosDb:AccountEndpoint"], configuration["CosmosDb:AccountKey"], configuration["CosmosDb:DatabaseName"])
+                options.UseCosmos(configuration["CosmosDB:AccountEndpoint"], configuration["CosmosDB:AccountKey"], configuration["CosmosDB:DatabaseName"]),
+                ServiceLifetime.Singleton
             );
 
-            services.AddScoped<IApplicationDbContext>(provider => provider.GetRequiredService<ApplicationDbContext>());
-            services.AddScoped<IOnlinerApartmentRepository, OnlinerApartmentRepository>();
-            services.AddScoped<IChatRepository, ChatRepository>();
+            services.AddSingleton<IApplicationDbContext>(provider => provider.GetRequiredService<ApplicationDbContext>());
+            services.AddSingleton<IApartmentRepository, ApartmentRepository>();
 
             return services;
         }
