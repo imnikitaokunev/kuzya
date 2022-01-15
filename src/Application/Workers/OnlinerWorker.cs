@@ -1,4 +1,5 @@
-﻿using Application.Common.Interfaces;
+﻿using Application.Common;
+using Application.Common.Interfaces;
 using Application.Models;
 using Application.Models.Options;
 using Application.Onliner;
@@ -36,15 +37,11 @@ public class OnlinerWorker : BackgroundService
                 _logger.LogInformation("Processing Onliner at: {time}", DateTimeOffset.Now);
 
                 var response = await _restClient.GetAsync<OnlinerResponse>(new RestRequest(), stoppingToken);
-                if (!response.Apartments.Any())
-                {
-                    return;
-                }
-
                 var newApartments = new List<ApplicationApartment>();
+                
                 foreach (var apartment in response.Apartments)
                 {
-                    if (!await _apartmentRepository.IsExists(apartment.Id, apartment.Platform))
+                    if (!await _apartmentRepository.IsExists(apartment.Id, Constants.Onliner))
                     {
                         var entity = apartment.Adapt<Apartment>();
                         await _apartmentRepository.AddAsync(entity);
@@ -52,8 +49,7 @@ public class OnlinerWorker : BackgroundService
                     }
                 }
 
-                _logger.LogInformation("Processed {count} apartments", newApartments.Count());
-                // Send apartments.
+                _logger.LogInformation("Processed {count} apartments from Onliner", newApartments.Count());
             }
             catch (Exception ex)
             {

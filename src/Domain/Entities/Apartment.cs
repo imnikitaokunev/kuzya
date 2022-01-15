@@ -4,4 +4,5 @@ public class Apartment : Entity
 {
     public long Id { get; set; }
     public string Platform { get; set; }
+    public bool IsSent { get; set; }
 }
