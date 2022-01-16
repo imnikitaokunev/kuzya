@@ -1,4 +1,5 @@
-﻿using Application.Workers;
+﻿using Application.Common.Commands;
+using Application.Workers;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Application;
@@ -9,8 +10,12 @@ public static class DependencyInjection
     {
         MappingProfile.ApplyMappings();
 
+        services.AddTransient<ListCommand>();
+        services.AddTransient<CommandsList>();
+
         services.AddHostedService<OnlinerWorker>();
         services.AddHostedService<SenderWorker>();
+        services.AddHostedService<TelegramWorker>();
 
         return services;
     }

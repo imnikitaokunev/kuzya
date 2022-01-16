@@ -12,7 +12,7 @@ public class Program
 {
     public static async Task Main(string[] args)
     {
-        using IHost host = CreateHostBuilder(args).Build();
+        using var host = CreateHostBuilder(args).Build();
 
         await host.RunAsync();
     }
@@ -46,12 +46,6 @@ public class Program
 
             services.Configure<ApplicationOptions>(
                 configurationRoot.GetSection(ApplicationOptions.Application));
-
-            var telegramOptions = new TelegramOptions();
-            configurationRoot.GetSection(nameof(TelegramOptions)).Bind(telegramOptions);
-
-            services.Configure<TelegramOptions>(
-                configurationRoot.GetSection(nameof(TelegramOptions)));
 
             services.AddApplication();
             services.AddInfrastructure(configurationRoot);

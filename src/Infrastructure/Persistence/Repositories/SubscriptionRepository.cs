@@ -17,4 +17,9 @@ public class SubscriptionRepository : ISubscriptionRepository
     {
         return await _context.Subscriptions.Where(x => x.IsActive).ToListAsync();
     }
+
+    public async Task<IEnumerable<Subscription>> GetActiveByChatIdAsync(long chatId)
+    {
+        return await _context.Subscriptions.Where(x => x.IsActive && x.ChatId == chatId).ToListAsync();
+    }
 }
