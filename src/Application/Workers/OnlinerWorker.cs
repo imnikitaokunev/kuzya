@@ -34,14 +34,14 @@ public class OnlinerWorker : BackgroundService
         {
             try
             {
-                _logger.LogInformation("Processing Onliner at: {time}", DateTimeOffset.Now);
+                _logger.LogInformation("Processing {text} at: {time}", Constants.Onliner, DateTimeOffset.Now);
 
                 var response = await _restClient.GetAsync<OnlinerResponse>(new RestRequest(), stoppingToken);
                 var newApartments = new List<ApplicationApartment>();
                 
                 foreach (var apartment in response.Apartments)
                 {
-                    if (!await _apartmentRepository.IsExists(apartment.Id, Constants.Onliner))
+                    if (!await _apartmentRepository.IsExistsAsync(apartment.Id, Constants.Onliner))
                     {
                         var entity = apartment.Adapt<Apartment>();
                         await _apartmentRepository.AddAsync(entity);
@@ -49,7 +49,7 @@ public class OnlinerWorker : BackgroundService
                     }
                 }
 
-                _logger.LogInformation("Processed {count} apartments from Onliner", newApartments.Count());
+                _logger.LogInformation("Processed {count} apartment(s) from {text}", newApartments.Count(), Constants.Onliner);
             }
             catch (Exception ex)
             {

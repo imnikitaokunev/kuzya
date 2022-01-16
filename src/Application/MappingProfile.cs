@@ -12,12 +12,25 @@ internal static class MappingProfile
     {
         TypeAdapterConfig<OnlinerApartmentDto, Apartment>
             .NewConfig()
-            .Map(dst => dst.Platform, src => Constants.Onliner);
+            .Map(dst => dst.Platform, src => Constants.Onliner)
+            .Map(dst => dst.Rooms, src => ParseRooms(src.RentType))
+            .Map(dst => dst.Link, src => src.Url)
+            .Map(dst => dst.Price, src => src.Price.Converted.BYN.Amount)
+            .Map(dst => dst.Currency, src => Constants.OnlinerCurrency)
+            .Map(dst => dst.UsdPrice, src => src.Price.Converted.USD.Amount)
+            .Map(dst => dst.IsOwner, src => src.Contact.Owner)
+            .Map(dst => dst.Address, src => src.Location.Address);
 
         TypeAdapterConfig<OnlinerApartmentDto, ApplicationApartment>
             .NewConfig()
-            .Map(dst => dst.Amount, src => src.Price.Converted.USD.Amount)
-            .Map(dst => dst.Currency, src => src.Price.Converted.USD.Currency)
-            .Map(dst => dst.Platform, src => Constants.Onliner);
+            .Map(dst => dst.Platform, src => Constants.Onliner)
+            .Map(dst => dst.Price, src => src.Price.Converted.BYN.Amount)
+            .Map(dst => dst.Currency, src => Constants.OnlinerCurrency)
+            .Map(dst => dst.Address, src => src.Location.Address);
+    }
+
+    private static int ParseRooms(string text)
+    {
+        return int.TryParse(text[..1], out var rooms) ? rooms : 1;
     }
 }

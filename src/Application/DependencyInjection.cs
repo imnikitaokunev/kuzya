@@ -10,6 +10,7 @@ public static class DependencyInjection
         MappingProfile.ApplyMappings();
 
         services.AddHostedService<OnlinerWorker>();
+        services.AddHostedService<SenderWorker>();
 
         return services;
     }
