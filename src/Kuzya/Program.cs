@@ -1,21 +1,18 @@
 ﻿using Application;
-using Application.Common;
 using Application.Models.Options;
 using Infrastructure;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Serilog;
-using Telegram.Bot;
+
+namespace Kuzya;
 
 public class Program
 {
     public static async Task Main(string[] args)
     {
-        using IHost host = CreateHostBuilder(args).Build();
-
-        var receiever = host.Services.CreateScope().ServiceProvider.GetRequiredService<TelegramReceiver>();
-        receiever?.Start();
+        using var host = CreateHostBuilder(args).Build();
 
         await host.RunAsync();
     }
@@ -37,32 +34,20 @@ public class Program
                 .Enrich.WithMachineName()
                 .Enrich.WithProperty("Environment", context.HostingEnvironment.EnvironmentName)
                 .WriteTo.Console()
+                .WriteTo.File("log.txt")
                 .ReadFrom.Configuration(context.Configuration);
-
-            if (context.HostingEnvironment.IsDevelopment())
-            {
-                configuration.WriteTo.File("log.txt");
-            }
         })
         .ConfigureServices((context, services) =>
         {
             var configurationRoot = context.Configuration;
 
             services.Configure<OnlinerOptions>(
-                configurationRoot.GetSection(nameof(OnlinerOptions)));
+                configurationRoot.GetSection(OnlinerOptions.Onliner));
 
             services.Configure<ApplicationOptions>(
-                configurationRoot.GetSection(nameof(ApplicationOptions)));
+                configurationRoot.GetSection(ApplicationOptions.Application));
 
-            var telegramOptions = new TelegramOptions();
-            configurationRoot.GetSection(nameof(TelegramOptions)).Bind(telegramOptions);
-
-            services.Configure<TelegramOptions>(
-                configurationRoot.GetSection(nameof(TelegramOptions)));
-
-            services.AddTransient<ITelegramBotClient>(x => new TelegramBotClient(telegramOptions.ApiToken));
-
-            services.AddApplication(configurationRoot);
+            services.AddApplication();
             services.AddInfrastructure(configurationRoot);
         });
 }

@@ -19,21 +19,19 @@ resource "azurerm_cosmosdb_account" "cosmosdb_account" {
 }
 
 resource "azurerm_cosmosdb_sql_database" "cosmosdb_database" {
-  name                = var.database_name
-  resource_group_name = var.resource_group_name
-  account_name        = var.name
-  throughput          = 400
+    name                = var.database_name
+    resource_group_name = var.resource_group_name
+    account_name        = var.name
+    throughput          = 400
 }
 
-resource "azurerm_cosmosdb_sql_container" "example" {
-  name                  = var.container_name
-  resource_group_name   = var.resource_group_name
-  account_name          = var.name
-  database_name         = var.database_name
-  partition_key_path    = "/partititionKey"
-  throughput            = 400
+// Todo: Move containers to loop
 
-  unique_key {
-    paths = ["/Id"]
-  }
+resource "azurerm_cosmosdb_sql_container" "example" {
+    name                = var.container_name
+    resource_group_name = var.resource_group_name
+    account_name        = var.name
+    database_name       = var.database_name
+    partition_key_path  = "/Platform"
+    throughput          = 400
 }
